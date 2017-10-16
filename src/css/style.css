@@ -1,0 +1,71 @@
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+.bg { 
+    /* The image used */
+    background-image: url(http://res.cloudinary.com/pgoodjohn/image/upload/v1507572574/MattiaSerchione/Assets/background.jpg);
+
+    /* Full height */
+    height: 100%; 
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parent {
+    min-height: 100vh;
+
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+
+    align-items: center;
+}
+
+.child {
+    text-align: center;
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+}
+
+.copy {
+    font-family: 'Open Sans Condensed', 'sans-serif';
+    font-size: 72px;
+    font-weight: 700;
+    line-height: 1;
+    color: white;
+    margin: 0;
+}
+
+.logo {
+    max-width: 25%;
+}
+
+.secondary-copy {
+    font-family: 'Open Sans Condensed', 'sans-serif';
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 1;
+    color: white;
+    margin: 0;
+}
+
+/*Mobile*/
+@media screen
+and (max-device-width: 800px) {
+    .copy {
+        font-size: 26px;
+    }
+    .secondary-copy {
+        font-size: 20px;
+    }
+}
